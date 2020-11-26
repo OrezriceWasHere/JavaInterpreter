@@ -1,4 +1,4 @@
-package Interpeter;
+package Interpreter;
 
 import Expression.*;
 import Expression.Number;
