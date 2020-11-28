@@ -36,7 +36,6 @@ public final class Return extends UnaryCommand<Integer> {
     @Override
     public void setArgs(String[] args) throws InvalidArgumentsException {
         super.setArgs(args);
-        String commandArgument = getCommandArgument();
         this.returnStatus = (int) CalcExpresion.calc(commandArgument);
     }
 
