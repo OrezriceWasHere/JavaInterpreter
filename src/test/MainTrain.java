@@ -1,31 +1,10 @@
 package test;
 
-import Interpreter.Commands.Exceptions.CommandNotFoundException;
-import Interpreter.Commands.Exceptions.InvalidArgumentsException;
-import Interpreter.Commands.Fundation.Command;
-import Interpreter.Commands.Fundation.CommandTranslator;
-
 import java.util.Random;
 
 public class MainTrain {
 
 	public static void main(String[] args) {
-		testMain(args);
-	}
-
-
-	public static void testMain(String[] args)  {
-		try {
-			Command.parse("return 3 * 5 - 8+2)").execute();
-		} catch (CommandNotFoundException e) {
-			System.out.println("command not found");
-		} catch (InvalidArgumentsException e) {
-			System.out.println("impossible arguments");
-			System.out.println(e.getMessage());
-		}
-	}
-
-	public static void prodMain(String[] args) {
 		Random r=new Random();
 		int port=r.nextInt(1001)+5000;
 		Simulator sim=new Simulator(port); // sim_client on port+1, sim_server on port
