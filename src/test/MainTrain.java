@@ -23,7 +23,6 @@ public class MainTrain {
 			System.out.println("impossible arguments");
 			System.out.println(e.getMessage());
 		}
-		System.out.println("done");
 	}
 
 	public static void prodMain(String[] args) {
